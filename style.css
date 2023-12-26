@@ -1,71 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-.center {
-    padding-left: calc(50% - 600px);
-    padding-right: calc(50% - 600px);
-}
-.top {
-    width: 1440px;
-    height: 1024px;
-    background-image: url(img/top.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
 }
-.title{
-padding-top: 217px;
-width: 788px;
-height: 125px;
-color: #FFF;
-font-family: Montserrat;
-font-size: 64px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+
+.top {
+  height: 1024px;
+  background-image: url(img/top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
-.subtitle{
-width: 481px;
-height: 64px;
-color: #FFF;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 300;
-line-height: 32px; /* 177.778% */
+
+.title {
+  padding-top: 217px;
+  width: 788px;
+  height: 125px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-.footer_button{
-margin-left: 120px;
-width: 234.063px;
-height: 48.603px;
-flex-shrink: 0;
-border-radius: 30px;
-background: #9C0332;
-text-align: center;
-color: #FFF;
-font-family: Montserrat;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+
+.subtitle {
+  padding-top: 32px;
+  padding-bottom: 42px;
+  width: 481px;
+  height: 64px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  /* 177.778% */
 }
-.game_content{
-   
+
+.button {
+  margin-left: 120px;
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #9C0332;
+  text-align: center;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.game_content {
+  display: flex;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
+  row-gap: 56px;
+  flex-flow: row wrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.for {
+  grid-column: span 3;
+}
+
+.for_item1 {
+  width: 378px;
+  height: 300px;
+  top: 1152px;
+  left: 531px;
+  border-radius: 16px;
+  background-image: url(./img/Group1.png);
+}
+
+.for_item2 {
+  width: 378px;
+  height: 300px;
+  top: 1152px;
+  left: 531px;
+  border-radius: 16px;
+  background-image: url("./img/Group2.png");
+}
+
+.for_item3 {
+  width: 378px;
+  height: 300px;
+  top: 1152px;
+  left: 531px;
+  border-radius: 16px;
+  background-image: url("./img/Group3.png");
+}
+
+.footer {
+  height: 556px;
+  background-image: url(img/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background: black;
+  padding-bottom: 128px;
+}
+
+.for_item {
+  grid-column: span 3;
+  font-style: normal;
+  /* font-weight: 600; */
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  justify-content: left;
+  align-items: flex-end;
+}
+
+* {
+  border: 2px solid red;
+}
+
+@media (max-width: 767px) {
+  .center {
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .title {
+    width: 90%;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+  }
+  .subtitle {
+    width: 90%;
+    text-align: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+  }
+  .button {
+    align-items: center;
+    margin: 0 auto;
+    display: block;
+  }
+  .game_content {
     display: flex;
+    -moz-column-gap: 32px;
     column-gap: 32px;
     row-gap: 56px;
     flex-flow: row wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 90%;
+  }
+  .for_item1,
+  .for_item2,
+  .for_item3 {
+    align-content: center;
+    width: 100%;
+  }
 }
 .footer {
-    width: 1440px;
-    height: 556px;
-    background-image: url(img/footer.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background: black;
-    
-
+  height: 100%;
 }
+
+* {
+  border: 2px solid red;
+}/*# sourceMappingURL=style.css.map */
