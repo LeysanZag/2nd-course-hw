@@ -63,6 +63,26 @@ body {
     font-weight: 400;
     line-height: normal;
 }
+    
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+}
+button:hover {
+	animation: bounce 1s;
+}
 
 .game_content {
     display: flex;
@@ -78,7 +98,6 @@ body {
 
 .for {
     grid-column: span 3;
-
 }
 
 .for_item1 {
@@ -120,20 +139,19 @@ body {
 }
 
 .for_item {
-    grid-column: span 3;
+    padding-left: 32px;
+    padding-bottom: 32px;
+    // grid-column: span 3;
     font-style: normal;
     /* font-weight: 600; */
     font-size: 24px;
     color: #ffffff;
-    display: flex;
-    justify-content: left;
-    align-items: flex-end;
+     display: flex;
+    //  justify-content: left;
+     align-items: flex-end;
+    background-repeat: no-repeat;
 }
 
-* {
 
-    border: 2px solid red;
-
-}
 
 @import 'mobile';
