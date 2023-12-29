@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -21,9 +22,16 @@ body {
     background-size: cover;
 
 }
+.header{
+    padding-top: 217px;
+    display: flex;
+    row-gap: 32px;
+    flex-wrap:wrap;
+    flex-direction: column;
+}
 
 .title {
-    padding-top: 217px;
+    // padding-top: 217px;
     width: 788px;
     height: 125px;
     color: #FFF;
@@ -35,8 +43,8 @@ body {
 }
 
 .subtitle {
-    padding-top: 32px;
-    padding-bottom: 42px;
+    // padding-top: 32px;
+    // padding-bottom: 42px;
     width: 481px;
     height: 64px;
     color: #FFF;
@@ -49,7 +57,7 @@ body {
 }
 
 .button {
-    margin-left: 120px;
+    // margin-left: 120px;
     width: 234.063px;
     height: 48.603px;
     flex-shrink: 0;
@@ -63,7 +71,12 @@ body {
     font-weight: 400;
     line-height: normal;
 }
-
+button:hover {
+    cursor: pointer;
+}
+button:hover {
+    animation: bounce 1s;
+}
 @keyframes bounce {
 
     0%,
@@ -85,9 +98,7 @@ body {
     }
 }
 
-button:hover {
-    animation: bounce 1s;
-}
+
 
 .game_content {
     display: flex;
@@ -100,10 +111,14 @@ button:hover {
     justify-content: center;
     align-items: baseline;
 }
+game_content:hover {
+    cursor: pointer;
+}
 
 .for {
     grid-column: span 3;
 }
+
 
 .for_item1 {
     width: 378px;
@@ -113,6 +128,10 @@ button:hover {
     border-radius: 16px;
     background-image: url(./img/Group1.png);
 }
+.for_item1:hover {
+    animation: bounce 1s;
+}
+
 
 .for_item2 {
     width: 378px;
@@ -121,6 +140,9 @@ button:hover {
     left: 531px;
     border-radius: 16px;
     background-image: url("./img/Group2.png");
+}
+.for_item2:hover {
+    animation: bounce 1s;
 }
 
 .for_item3 {
@@ -131,15 +153,18 @@ button:hover {
     border-radius: 16px;
     background-image: url("./img/Group3.png");
 }
+.for_item3:hover {
+    animation: bounce 1s;
+}
 
 .footer {
-    // width: 1440px;
-    height: 556px;
+    //  width: 1440px;
+    // height: 556px;
     background-image: url(img/footer.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background: black;
+    // background: black;
     padding-bottom: 128px;
 }
 
@@ -156,6 +181,7 @@ button:hover {
     align-items: flex-end;
     background-repeat: no-repeat;
 }
+
 
 
 
