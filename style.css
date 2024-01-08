@@ -40,6 +40,15 @@ body {
   line-height: normal;
 }
 
+.game_text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #FFFFFF;
+  margin-top: 32px;
+  margin-bottom: 44px;
+}
+
 .subtitle {
   width: 481px;
   height: 64px;
@@ -169,6 +178,43 @@ game_content:hover {
   background-repeat: no-repeat;
 }
 
+.seasons_content {
+  background: #000915;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.seasons_box {
+  background-image: url(img/footback2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+  padding-bottom: 233px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.seasons_game_img {
+  width: 485px;
+  margin-top: 233px;
+}
+
+.title_season {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 78px;
+  color: #FFFFFF;
+  padding-top: 282px;
+  max-width: 700px;
+}
+
 @media (max-width: 767px) {
   .center {
     width: 100%;
@@ -213,6 +259,36 @@ game_content:hover {
     justify-content: center;
     flex-direction: column;
     align-content: flex-start;
+  }
+  .seasons_game_img {
+    width: 100%;
+    margin-top: 64px;
+  }
+  .title_season {
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+  }
+  .game_text {
+    font-size: 14px;
+    line-height: 22px;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    margin-top: 32px;
+  }
+  .seasons_game {
+    display: flex;
+    width: 100%;
+    margin-top: 52px;
+  }
+  .seasons_box {
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
   }
   .for_item1 {
     width: 343px;

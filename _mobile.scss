@@ -48,7 +48,39 @@
         align-content: flex-start;
      
     }
+    .seasons_game_img {
+        width: 100%;
+        margin-top: 64px;
+    }
+    .title_season{
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+    .game_text{
+        font-size: 14px;
+        line-height: 22px;
+        vertical-align: middle;
+        text-align: center;
+        width: 100%;
+        margin-top: 32px;
+        }
 
+        .seasons_game {
+           
+            display: flex;
+            width: 100%;
+            margin-top: 52px;
+        }
+        .seasons_box {
+            display: flex;
+        background-size: cover;
+        background-position: center center;
+        align-items: center;
+        flex-wrap: wrap;
+        align-content: center;
+        }
+               
 
     .for_item1 
     {
