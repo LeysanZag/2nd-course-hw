@@ -16,7 +16,7 @@ numb = numb.join(' ');
 console.log(numb);
 
 //Задание 4
-let table [i] = [];
+let table = [];
 
 for (let i = 0; i < 3; i++) {
   table[i] = [];
@@ -33,9 +33,11 @@ console.log(arr);
 
 //Задание 6
 let arr = [9, 8, 7, 'a', 6, 5]
-delete arr[3];
-arr = arr.sort();
+arr.sort((a,b) =>a-b).pop();
+// delete arr[3];
+// arr.pop();
 console.log(arr);
+
 
 //Задание 7
 let arr = [9, 8, 7, 6, 5];
@@ -58,10 +60,9 @@ const newStr = reverseString('abcdef');
 console.log(newStr);
 
 //Задание 9
-const arr1 =[1, 2, 3,];
-const arr2 = [4, 5, 6];
-let arr3 = arr1.concat(arr2);
-console.log(arr3);
+const arrDouble=[[1, 2, 3,], [4, 5, 6]];
+const flatArr = arrDouble.flat();
+console.log(flatArr);
 
 //Задание 10
 let arr = [2,7,6,9,8,6,5,4,3,1];
@@ -80,6 +81,11 @@ for (let i = 0; i < getLengthWords.length; i++) {
     newArray.push(getLengthWords[i].length);
     console.log(newArray);
 }
+//Задание 12-2
+const getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква']
+return  result =getLengthWords.map(getLengthWords => getLengthWords.length);
+console.log(result);
+
 
 //Задание 13
   function filterPositive(array) {
