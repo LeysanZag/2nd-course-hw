@@ -15,12 +15,14 @@ console.log(Math.ceil(val));
 console.log(Math.round(val));
 
 //Задание 4
-const numbers = (52, 53, 49, 77, 21, 32);
-console.log(Math.max(numbers));
-console.log(Math.min(numbers));
+const numbers = [52, 53, 49, 77, 21, 32];
+console.log(Math.max(... numbers));
+console.log(Math.min(... numbers));
+
 
 //Задание 5
-Math.round(Math.random()*10);
+const randomNumber = Math.floor(Math.random() * 10);
+console.log(randomNumber);
 
 //Задание 6
 function getRandomNum(maxValue) {
