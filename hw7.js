@@ -21,7 +21,7 @@ console.log(Math.min(... numbers));
 
 
 //Задание 5
-const randomNumber = Math.floor(Math.random() * 10);
+const randomNumber = Math.floor(Math.random() * 10)+1;
 console.log(randomNumber);
 
 //Задание 6
