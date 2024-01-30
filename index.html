@@ -1,13 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> id="top"> Главная страница</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="./index.js">
-    </script>
+    <script src="./game1.js"></script>
+    <script src="./game_hw7.js"></script>
 </head>
+
 <body>
+    <div class="top center">
+        <header class="header center">
+            <h1 class="title"> Добро пожаловать на мой сайт !</h1>
+            <h4 class="subtitle"> Вам предстоит пройти несколько увлекательных игр. Если готов нажимай поехали и
+                приступай </h4>
+            <button class="button">Поехали!</button>
+    </div>
+
+    <div class="footer">
+        <div class="game_content center">
+            <span class="for_item1 for_item for">Игра 1</span>
+            <span class="for_item2 for_item for">Игра 2</span>
+            <span class="for_item3 for_item for">Игра 3</span>
+        </div>
+    </div>
+
+
+    <section class="seasons_box center">
+        <div class="seasons_content">
+            <h1 class="title_season">Времена года!</h1>
+            <p class="game_text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени
+                года он относится</p>
+            <div class="button">
+                <button onclick="seasonGame()" class="button">Играть!</button>
+            </div>
+        </div>
+        <div class="seasons_game">
+            <img src="./img/game.png" alt="Приставка" class="seasons_game_img">
+        </div>
+    </section>
+
+    <section class="words center">
+        <div class="words_content">
+            <h1 class="words_title">Запомни слова</h1>
+            <p class="game_text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <div class="button">
+                <button onclick="gameStart()" class="button">Играть!</button>
+            </div>
+        </div>
+        <div class="seasons_game">
+            <img src="./img/word.png" alt="Game" class="seasons_game1_img">
+        </div>
+    </section>
     
+    <script src="./game1.js"></script>
+    <script src="./game_hw7.js"></script>
+
 </body>
+
 </html>
