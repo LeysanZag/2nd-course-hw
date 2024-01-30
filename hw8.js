@@ -56,23 +56,26 @@ setTimeout(function() {
     
 // Задание 4
 function delayForSecond(callback) {
-    setTimeout(handler:() => {callback()}, timeout: 1000)
-}
-delayForSecond(callback: function () {
-  console.log('Привет, Глеб!');
-})
+    setTimeout(callback, 1000);
+  }
+  delayForSecond(function () {
+    console.log('Привет, Глеб!');
+  });
 
 // Задание 5
 function delayForSecond(cb) {
     setTimeout(() => {
         console.log('Прошла одна секунда');
 				if(cb) { 	cb(); }
-
     }, 1000)
 }
-// Функция sayHi выводит в консоль приветствие для указанного имени
-function sayHi (name) {
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (cb) { cb(); }
+    }, 1000)
+}
+function sayHi(name) {
     console.log(`Привет, ${name}!`);
 }
-const callback = () =>sayHi(name:'Глеб')
-delayForSecond(callback)
+delayForSecond(() => sayHi('Глеб'));
